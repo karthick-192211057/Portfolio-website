@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+  transition: background-color 0.3s, color 0.3s;
+}
+.dark-mode {
+  background-color: #111;
+  color: #eee;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #004aad;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1000;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #007fff, #004aad);
+  color: white;
+}
+.animated-text {
+  animation: slide 3s ease-in-out infinite alternate;
+}
+@keyframes slide {
+  0% { letter-spacing: 0px; }
+  100% { letter-spacing: 5px; }
+}
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+.project-card {
+  background: #f0f4ff;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+.dark-mode .project-card {
+  background: #1e1e1e;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+input, textarea {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+button {
+  padding: 10px;
+  background-color: #004aad;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #002e5c;
+  color: white;
+}
